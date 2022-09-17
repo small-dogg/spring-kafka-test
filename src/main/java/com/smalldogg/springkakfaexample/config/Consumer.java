@@ -9,4 +9,16 @@ public class Consumer {
     public void listenGroupFoo(String message) {
         System.out.println("message : " + message);
     }
+    @KafkaListener(topics = "a")
+    public void listenA(String message) {
+        System.out.println("message : " + message);
+    }
+    @KafkaListener(topics = "b")
+    public void listenB(String message) {
+        System.out.println("message : " + message);
+    }
+    @KafkaListener(topics = "c")
+    public void listenC(String message) {
+        System.out.println("message : " + message);
+    }
 }

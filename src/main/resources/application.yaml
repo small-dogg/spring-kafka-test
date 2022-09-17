@@ -10,6 +10,6 @@ spring:
       bootstrap-server: "localhost:9092"
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
-      a-topic: a
-      b-topic: b
-      c-topic: c
+      a-topic: "a"
+      b-topic: "b"
+      c-topic: "c"
