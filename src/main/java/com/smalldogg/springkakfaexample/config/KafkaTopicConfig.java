@@ -13,16 +13,16 @@ import java.util.Map;
 @Configuration
 public class KafkaTopicConfig {
 
-    @Value(value = "${kafka.producer.bootstrap-server}")
+    @Value(value = "${spring.kafka.producer.bootstrap-server}")
     private String bootstrapAddress;
 
-    @Value(value = "${kafka.producer.a-topic}")
+    @Value(value = "${spring.kafka.producer.a-topic}")
     private String aTopic;
 
-    @Value(value = "${kafka.producer.b-topic}")
+    @Value(value = "${spring.kafka.producer.b-topic}")
     private String bTopic;
 
-    @Value(value = "${kafka.producer.c-topic}")
+    @Value(value = "${spring.kafka.producer.c-topic}")
     private String cTopic;
 
     @Bean
