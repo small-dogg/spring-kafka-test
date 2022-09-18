@@ -1,1 +1,5 @@
 rootProject.name = 'spring-kakfa-example'
+include 'sender'
+include 'subscriber-a'
+include 'subscriber-b'
+
