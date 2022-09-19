@@ -21,4 +21,12 @@ public class Consumer {
     public void listenC(String message) {
         System.out.println("message : " + message);
     }
+    @KafkaListener(topics = "topic1")
+    public void listenTopic1(String message) {
+        System.out.println("message : " + message);
+    }
+    @KafkaListener(topics = "topic2")
+    public void listenTopic2(String message) {
+        System.out.println("message : " + message);
+    }
 }
